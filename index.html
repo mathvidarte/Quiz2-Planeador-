@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz 2</title>
+        <link rel = "stylesheet" href= "index.css">
+    </head>
+    <body>
+        <h1 id="titles">Global Solution SAS</h1>
+        <div id="inputs">
+            
+            <input id="tarea" type="text" placeholder="Descripción de la tarea">
+            <button id ="btnNew">Nueva tarea</button>
+        </div> 
+        <br>
+
+        <div id="feed">
+            <div id="subtitles">
+            <h3 id="ttodo">To Do</h3>
+            <h3 id="tdoing">Doing</h3>
+            <h3 id="tdone">Done</h3>
+            </div>
+
+            <div id="cards">
+                <div id="toDoContainer"> 
+
+                </div>
+
+                <div id="doingContainer"> 
+
+                </div>
+
+                <div id="doneContainer">
+
+                </div>
+
+            </div>
+        <div>
+            
+    </body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8QnfTkcGkG8bkLBIAhXt_QUIeRbTM0FE",
+    authDomain: "planeador-9a0d2.firebaseapp.com",
+    databaseURL: "https://planeador-9a0d2.firebaseio.com",
+    projectId: "planeador-9a0d2",
+    storageBucket: "planeador-9a0d2.appspot.com",
+    messagingSenderId: "207113455941",
+    appId: "1:207113455941:web:5fa3ce397543467b6dd62c",
+    measurementId: "G-DC99VLE446"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="Components/FilaTarea.js"></script>
+<script src="Components/FilaDoing.js"></script>
+<script src="Components/FilaDone.js"></script>
+<script src="js/index.js"></script>

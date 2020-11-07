@@ -1,0 +1,142 @@
+#titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80em;
+    justify-content: center;
+    align-items: center;
+}
+
+#tarea {
+    width: 40em;
+    height: 2em;
+    margin-right: 10px;
+}
+
+#btnNew {
+    width: 20em;
+    height: 2.5em;
+    background-color: #297FC6;
+    color: #ffffff;
+}
+
+#subtitles {
+    display: flex;
+    flex-direction: row;
+    margin: 0auto;
+    width: 60em;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#subtitles * {
+    padding: 10px 60px;
+    background: #297FC6;;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 0.2em;
+    
+}
+
+.filasTarea {
+    position: relative;
+    display: flex;
+    background-color:#e7e7e7;
+    width: 12em;
+    height: 5em;
+    border-radius: 0.2em;
+
+    
+}
+
+.elTexto {
+    font-family: Lato;
+    color:#297FC6;
+    text-align: center;
+}
+
+.deleteButton {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    background-color:tomato;
+    border-radius: 50em;
+}
+
+.nextButton {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color:teal;
+    border-radius: 50em;
+}
+
+.backButton {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color:sandybrown;
+    border-radius: 50em;
+}
+
+#cards {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    border-radius: 0.2em;
+ 
+    width: 70em;
+    justify-content: center;
+}
+
+#cards * {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+#toDoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#toDoContainer * {
+    margin-top: 10px;
+}
+
+#doingContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#doingContainer * {
+    margin-top: 10px;
+
+}
+
+#doneContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#doneContainer {
+    margin-top: 10px;
+}
+
+
+
+
