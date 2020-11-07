@@ -9,7 +9,7 @@ class FilaDone{
     render = () => {
         let component =document.createElement('div');
         component.className='filasTarea';
-        
+
         let tareaCont =document.createElement('div');
         tareaCont.className='elTexto'
         tareaCont.innerHTML= (
@@ -24,16 +24,28 @@ class FilaDone{
         backBtn.className='backButton';
         backBtn.innerHTML= '<';
 
+        let fechaCont =document.createElement('div');
+        fechaCont.className='laFecha'
+        fechaCont.innerHTML= (
+             this.objetoTarea.day +"/"+ this.objetoTarea.month+"/"+this.objetoTarea.year
+       
+            
+         
+        );
+
 
         component.appendChild(tareaCont);
         component.appendChild(deleteBtn);
         component.appendChild(backBtn);
+        component.appendChild(fechaCont);
 
         deleteBtn.addEventListener('click', () => {
             const database = firebase.database();
-            database.ref('To Do/'+this.objetoTarea.id).set(null);
+            database.ref('Done/'+this.objetoTarea.id).set(null);
             
         });
+
+       
 
         backBtn.addEventListener('click', ()=> {
             const database = firebase.database();

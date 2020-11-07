@@ -14,6 +14,16 @@ class FilaTarea {
         tareaCont.className='elTexto'
         tareaCont.innerHTML= (
             this.objetoTarea.t
+          
+        );
+
+        let fechaCont =document.createElement('div');
+        fechaCont.className='laFecha'
+        fechaCont.innerHTML= (
+             this.objetoTarea.day +"/"+ this.objetoTarea.month+"/"+this.objetoTarea.year
+       
+            
+         
         );
 
         let deleteBtn = document.createElement('button');
@@ -45,6 +55,7 @@ class FilaTarea {
         component.appendChild(tareaCont);
         component.appendChild(deleteBtn);
         component.appendChild(nextBtn);
+        component.appendChild(fechaCont);
         
         return component;
     }

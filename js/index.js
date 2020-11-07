@@ -13,15 +13,20 @@ nueva = () => {
     
     
     let referencia = database.ref('To Do/').push();
-
+    let fechita = new Date();
 
     let objetoTarea = {
         t : tarea.value,
         id: referencia.key, 
+        year: fechita.getFullYear(),
+        day: fechita.getDate(),
+        month: fechita.getMonth(),
     }
 
     referencia.set(objetoTarea);
     tarea.value = " ";
+    
+    
     
 }
 

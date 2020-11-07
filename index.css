@@ -65,6 +65,7 @@
     font-family: Lato;
     color:#297FC6;
     text-align: center;
+    padding-top: 2em;
 }
 
 .deleteButton {
@@ -135,6 +136,14 @@
 
 #doneContainer {
     margin-top: 10px;
+}
+
+.laFecha {
+    position: absolute;
+    left: 10px;
+    top: px;
+    color: #297FC6;
+  
 }
 
 

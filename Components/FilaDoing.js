@@ -16,6 +16,15 @@ class FilaDoing {
             this.objetoTarea.t
         );
 
+        let fechaCont =document.createElement('div');
+        fechaCont.className='laFecha'
+        fechaCont.innerHTML= (
+             this.objetoTarea.day +"/"+ this.objetoTarea.month+"/"+this.objetoTarea.year
+       
+            
+         
+        );
+
         let deleteBtn = document.createElement('button');
         deleteBtn.className='deleteButton';
         deleteBtn.innerHTML='x';
@@ -33,6 +42,7 @@ class FilaDoing {
         component.appendChild(deleteBtn);
         component.appendChild(nextBtn);
         component.appendChild(backBtn);
+        component.appendChild(fechaCont);
 
         deleteBtn.addEventListener('click', () => {
             const database = firebase.database();
